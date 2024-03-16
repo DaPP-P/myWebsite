@@ -1,0 +1,204 @@
+body {
+    margin: 0,15rem;
+    font-family: "Work Sans", sans-serif;
+    font-size: 2rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    height: 100vh;
+  }
+
+h1 {
+    font-size: 7rem;
+    position: absolute;
+    top: 250px;
+    right: 350px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.opening-paragraph {
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 440px;
+    right: 300px;
+}
+
+/* Off-screen-menu */
+.off-screen-menu {
+    background-color: rgb(34, 37, 49);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 2;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+}
+
+.ham-menu {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.ham-menu span {
+    height: 10px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    z-index: 3;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.nested:hover {
+    border: 2px solid white; /* Add a border around the element */
+    cursor: pointer;
+}
+
+.button button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 4px 2px;
+    font-size: 1rem;
+    position: absolute;
+
+}
+
+#explore-btn{
+background-color: #9b9b9b; 
+display: inline-block;
+position: absolute;
+top: 490px;
+right: 325px;
+}
+
+#explore-btn:hover {
+    background-color: #616161;
+}
+
+#youtube-btn{
+    background-color: #ff2222; 
+    display: inline-block;
+    top: 770px;
+    left: 350px;
+}
+
+#youtube-btn:hover {
+    background-color: #fd1313;
+  }
+
+#linkedin-btn{
+    background-color: #226fff; 
+    display: inline-block;
+    top: 770px;
+    left: 200px;
+}
+
+#linkedin-btn:hover {
+    background-color: #1968fc
+}
+
+#github-btn{
+    background-color: #00369b; 
+    display: inline-block;
+    top: 770px;
+    left: 50px;
+}
+
+#github-btn:hover {
+    background-color: #05338a
+}
+
+.button span {
+    height: 2px;
+    width: 0.5%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    position: absolute;
+    left: 82%;
+}
+
+.button span:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-55deg);
+    top:  54.7%;
+    position: absolute;
+}
+
+.button span:nth-child(3) {
+
+    transform: translate(-50%, -50%) rotate(+55deg);
+    top:  54%;
+    position: absolute;
+}
+
+h2 {
+    top: 170px;
+    position: relative;
+    width: 100%;
+    text-align:center;
+    text-decoration: underline;
+}
+
+h3 {
+    top: 180px;
+    left: 150px;
+    position: relative;
+    width: 100%;
+}
+
+.spring-latest-work {
+    top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+}
