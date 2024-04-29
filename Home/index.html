@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prvanov</title>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="style.css"
-    type="text/css"
-    media="all"
-  />
-    <script src="script.js" defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is my first test to create my website">
+  <meta name="author" content="Created by Daniel Prvanov">
+
+  <title>Prvanov | Home</title>
+    <!-- Load google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet" />
+    <!-- Load font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Load my style sheet-->
+    <link rel="stylesheet" href="style2.css" type="text/css" media="all" />
+  
   </head>
-
   <body>
+    
+  <!-- navigation -->
+  <section class="navWrap">
+    <input type="checkbox" id="navToggle" class="navToggle">
+    <label for="navToggle" class="navToggleLabel"><span></span></label>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#springs_valley">Springs Valley</a></li>
+        <li><a href="#nbl">NBL Statistics</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
 
-  <div class="off-screen-menu">
+  <!-- Hero -->
+  <section class = "hero">
+    <img src="../Images/dodge_circle.png" alt="Dodge my goat">
+    <h1>Prvanov</h1>
+    <article>
+    <p>Welcome to my website, I have a lot of different projects that I want to to do, with the website being one of them! At the moment I have only made solid progress on Springs Valley but in time hopefully they'll be more to add. :)</p>
+    <button>Look around <i class="fas fa-angle-double-right"></i></button>
+    </article>
+  </section>
+
+<!-- ObjectOne -->
+<section class="object_one">
+  <h1>Springs Valley</h1>
+  <p> Build 1.0 is out now! This is my first video game. At the moment it is pretty rough but thats ok I'll be adding to it. down below is a video of some of the gameplay. More information can be found on the Springs Valley page.</p>
+  <iframe width="336" height="188" src="https://www.youtube.com/embed/CHSnz0bCaUk?si=koMT3ITfO9DXH35T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+</section>
+
+<!-- Footer -->
+<footer>
+<!-- Contact Info -->
+<section class = "contact_info">
+  <article>
+    <h3> Contact Information</h3>
     <ul>
-      <ul id= "spingsValleyLink" class="nested"> Springs Valley</ul>
-      <ul id= "arbitrageLink" class = "nested"> Arbitrage</ul>
-      <ul id = "baskeballLink" class = "nested">Basketball</ul>
+      <li> Phone: 021-188-2246</li>
+      <li> Email: danielprva@gmail.com</li>
     </ul>
-  </div>
-  <nav>
-    <div class = "ham-menu">
-      <span></span>
-      <span></span>
-      <span></span>
+  </article>
+</section>
+<!-- Social Links -->
+<section class = "social">
+  <article> 
+    <h4> Feel free to connect with me!</h4>
+    <div class = "social_icons">
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
-  </nav>  
+    <p> May 2024</p>
+  </article>
+</section>
 
-  <img src = "../Images/dodgeisking.jpeg" alt = "dodge (my goat) starting on top of hay" width = "800" height="600">
+</footer>
 
-  <h1>Prvanov.</h1>
-  <p class = "opening-paragraph"> Welcome to my website. Come see some projects I've been working on.</p>
-  <div class = "button">
-    <button id = "explore-btn">Have a look around</button>
-    <span></span>
-    <span></span>
-    <button id = "linkedin-btn"> Linkedin</button>
-    <button id = "github-btn">GitHub</button>
-    <button id = "youtube-btn">YouTube</button>
-  </div>
-  <div id = "latest-work">
-  <h2> My Latest Work</h2>
-  <h3> Springs Valley </h3>
-  <p class = "spring-latest-work"> This is my first video game. It still has a lot of work to do but it is coming along nicely. I hope to have a demo for it ready by the first of April.</p>
-  </div>
+
 </body>
 </html>
