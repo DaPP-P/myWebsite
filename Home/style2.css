@@ -138,7 +138,7 @@ body {
     color: #fff;
   }
 
-  /* Hero */
+  /*  2 Hero */
   .hero {
     background-color: #383838;
     background-size: cover;
@@ -147,7 +147,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: 10px 2fr 10px;
-    grid-template-rows: .5fr 1fr 20px;
+    grid-template-rows: .5fr 0.25fr 1fr 20px;
     grid-gap: 20px;
    }
 
@@ -158,13 +158,18 @@ body {
     grid-row: 1 / 2;
     max-width: 200px;
   }
-  .hero article {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
   
   .hero h1 {
+    margin: 0;
+    padding: 0px 0px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     font-size: 4rem;
+  }
+
+  .hero article {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
   }
   
   .hero button {
@@ -209,7 +214,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     padding: 5px 10px;
-    margin: .75rem auto 0;
+    margin: .25rem auto 0;
   }
 
 /* 4 Footer */
@@ -228,7 +233,8 @@ footer {
 
 .contact_info ul {
   list-style-position: inside;
-  text-align: center;
+  text-align: left;
+  padding-left: 10%;
 }
 
 .social {
@@ -244,10 +250,16 @@ footer {
 }
 
 .social_icons a {
-  color: #eeb80c;
+  color: #ffffff;
   margin-right: 20px;
   margin-left: 20px;
 }
+
+.social_icons a :hover {
+  color: #3b3b3b;
+}
+
+
 
 .social p {
   font-size: 0.5rem;
@@ -360,7 +372,7 @@ footer {
         grid-row: 1 / 2;
         grid-column: 2 / 3;
         width: 100%;
-        white-space: nowrap;
+        white-space: wrap;
         text-decoration: underline;
       }
 
@@ -378,6 +390,15 @@ footer {
         grid-row: 2 / 8;
         grid-column: 2 / 5;
       }
+
+    @media screen and (min-width: 1300px) {
+      
+      .object_one h1 {
+        white-space: nowrap;
+      }
+
+    }
+
 
 }
 
