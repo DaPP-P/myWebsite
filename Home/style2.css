@@ -184,6 +184,38 @@ body {
 
 /* 3 Objects */
 
+.object_zero {
+  background-color:  rgb(89, 89, 89);
+  background-size: cover;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 10px 2fr 10px;
+  grid-template-rows: .2fr .3fr 1fr 20px;
+  grid-gap: 2px;
+  align-self: center; 
+}
+
+.object_zero h1 {
+  margin: auto;
+  padding-top: 1rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  max-width: 200px;
+  text-decoration: underline;
+}
+
+.object_zero .first {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.object_zero .second {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
 .object_one {
     background-color:  rgb(31, 31, 31);
     background-size: cover;
@@ -356,6 +388,43 @@ footer {
 
 
     /* Object Media Queries */
+    
+    .object_zero {
+      padding-top: 50px;
+      padding-bottom: 100px;
+      background-color:  rgb(89, 89, 89);
+      min-height: 200px;
+      display: grid;
+      grid-template-columns: .25fr 1fr 1fr 1fr .25fr;;
+      grid-template-rows: repeat(2, 1fr); ;
+      align-items: center;
+    }
+    
+    .object_zero h1 {
+      font-size: 2.5rem;
+      margin-top: 0.1rem;
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      width: 100%;
+      text-decoration: underline;
+    }
+
+    .object_zero .first {
+      border-left: solid 1px #fff;
+      padding-left: 1rem;
+      text-align: left;
+      grid-row: 1 / 2;
+      grid-column: 3 / 5;
+    }
+
+    .object_zero .second {
+      padding-left: 1rem;
+      text-align: left;
+      grid-row: 2 / 3;
+      grid-column: 2 / 5;
+      margin-left: 5%;
+    }
+
     .object_one {
       padding-top: 50px;
       padding-bottom: 100px;
