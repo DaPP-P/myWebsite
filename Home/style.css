@@ -6,12 +6,16 @@ body {
     overflow-x: hidden;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 
 /* 2. Navigation */
 
 .navWrap {
     position: sticky;/*  ** note the menu will not be sticky until we add more page content */
-    top: 0;
+    top: 0% ;
     z-index: 99;
     height: 48px;
     width: 100%;
@@ -134,7 +138,6 @@ body {
   
   nav .btn:hover {
     background-color: #223054;
-    box-shadow: inset 0 0 5px #13b1e7;
     color: #fff;
   }
 
@@ -180,7 +183,13 @@ body {
     font-size: 1rem;
     padding: 5px 10px;
     margin: .75rem auto 0;
+    cursor: pointer; /* Change cursor to pointer on hover */
   }
+
+  .hero button:hover {
+    color: gray;
+  }
+
 
 /* 3 Objects */
 
@@ -302,14 +311,14 @@ footer {
 
     /* Navigation Media Queries */
     .navWrap {
+        position: sticky;/*  ** note the menu will not be sticky until we add more page content */
         display: grid;
-        grid-template-columns: 100px minmax(auto, -1100px);
         align-items: center;    
         justify-content: center;
         height: auto;
     }
       
-      .navToggleLabel {
+    .navToggleLabel {
         display: none;
     }
       
