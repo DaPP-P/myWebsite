@@ -138,6 +138,102 @@ nav .btn:hover {
   color: #fff;
 }
 
+/* ############ 4. releases ############ */
+
+.releases {
+  padding: 1rem;
+  margin: auto;
+  max-width: 1200px;
+}
+
+
+.releases article {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.releases h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+
+.releases article p {
+  border-left: solid 1px #ffffff;
+  padding-left: 1rem;
+}
+
+
+.releaseList{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+
+.releaseList > li {
+  border: 2px solid #ffffff; /* Change the color as needed */
+  border-radius: 8px; /* Adjust the value to make the corners rounded */
+  margin: 10px; /* Increase the value to make the border a little bit further out */
+  padding: 40px; /* Add padding to create a gap between the text and the border */
+}
+
+.releaseList .object > li:not(.exclude) {
+  color: #000000;
+  background-color: rgba(226, 226, 226, 0.9);
+  border-radius: 6px;
+  border: solid 1px #dedede;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1.8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(140px, 1fr) auto;
+}
+
+.releaseList h3, .releaseList img {
+  grid-row: 1 / 2;
+  grid-column: 1;
+}
+
+.releaseList h3 {
+  background-color: rgba(255,255,255,.5);
+  color: #ffffff;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(51,51,51,.7);
+  align-self: end;
+}
+
+.releases a {
+  border-radius: 3px;
+  background-color:  #ffffff;
+  color: #000000;
+  height: 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.releases a:hover {
+  background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Queries */
 @media screen and (min-width: 700px) {
 
@@ -194,98 +290,23 @@ nav .btn:hover {
       background-color: #223054;
   }
 
-
-
-/* ############ 4. Downloads ############ */
-.downloads {
-  padding: 1rem;
-  margin: auto;
-  max-width: 1200px;
-}
-
-.downloads article {
-  margin: 2rem auto;
-  width: 80%;
-  max-width: 1000px;
-}
-
-.downloads h1 {
-  color: #ffffff;
-  font-size: 3rem;
-  margin-left: 1rem;
-}
-
-.downloads article p {
-  border-left: solid 1px #dedede;
-  padding-left: 1rem;
-}
-
-.tripList {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1rem;
-}
-
-.tripList li {
-  background-color: rgba(255,255,255,.9);
-  border-radius: 6px;
-  border: solid 1px #dedede;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 1.8rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto minmax(140px, 1fr) auto;
-}
-
-.tripList h3, .tripList img {
-  grid-row: 1 / 2;
-  grid-column: 1;
-}
-
-.tripList h3 {
-  background-color: rgba(255,255,255,.5);
-  color: #fff;
-  padding: .5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(51,51,51,.7);
-  align-self: end;
-}
-
-.trips a {
-  border-radius: 3px;
-  background-color: #39bae6;
-  color: #fff;
-  height: 2rem;
-  margin-top: 1rem;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.trips a:hover {
-  background-color: #333;
-}
-
-}
-
-/* ######### 10a-iii. Trips, Large screen rules ######### */
-.tripList {
+  
+/* ######### 10a-iii. releases, Large screen rules ######### */
+.releaseList {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  .downloads article {
+  .releases article {
    width: 90%;
    display: flex;
    align-items: center;
   }
 
-  .downloads h1 {
+  .releases h1 {
     margin: 0 1rem 0 0;
   }
 
-  .downloads p {
+  .releases p {
     flex: 3;
   }
+}
