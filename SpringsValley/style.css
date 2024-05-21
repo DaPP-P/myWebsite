@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+  max-height: auto;
+}
+
 
 /* 2. Navigation */
 
@@ -225,15 +230,6 @@ nav .btn:hover {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Media Queries */
 @media screen and (min-width: 700px) {
 
@@ -309,4 +305,24 @@ nav .btn:hover {
   .releases p {
     flex: 3;
   }
+
+  .releases li {
+    max-height: 40rem;
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .expandBtn {
+    position: absolute;
+    bottom: 0; 
+  }
+    
+
+@media screen and (max-width: 700px) {
+  .releases li {
+    overflow: visible;
+    object-fit: contain;
+  }
+}
+
 }
