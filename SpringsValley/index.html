@@ -122,13 +122,14 @@
 </html>
 
 <script>
-  document.querySelector('.expandBtn').addEventListener('click', function(event) {
-    if(document.querySelector(".information").style.maxHeight == 'none') {
-      document.querySelector(".information").style.maxHeight = '15rem';
-      document.querySelector('.expandBtn').innerHTML = "expand <i class='fas fa-angle-double-down'></i>";
+  document.querySelector('.expandBtn').addEventListener('click', function() {
+    const informationDiv = document.querySelector('.information');
+    informationDiv.classList.toggle('expanded');
+
+    if (informationDiv.classList.contains('expanded')) {
+      this.innerHTML = "collapse <i class='fas fa-angle-double-up'></i>";
     } else {
-      document.querySelector(".information").style.maxHeight = 'none';
-      document.querySelector('.expandBtn').innerHTML = "collapse <i class='fas fa-angle-double-up'></i>";
+      this.innerHTML = "expand <i class='fas fa-angle-double-down'></i>";
     }
-});
+  });
 </script>
