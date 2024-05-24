@@ -72,7 +72,7 @@
           <li>Make attacking animation better and having the weapon sit on the player nicer.</li>
         </ul>  
         </div>
-        <a class = "expandBtn" >expand <i class="fas fa-angle-double-right"></i></a> 
+        <a class = "expandBtn" >expand <i class="fas fa-angle-double-down"></i></a> 
       </div>
 
       <!-- Second Object -->
@@ -81,7 +81,7 @@
         <div class="information">
         <h3>Latest Release</h3>
         <p> This is the first and newest release of the game! Its very basic at the moment. You can run around and fight skeletons. The AI needs improvement but you've got to start somehwere.</p>
-        <a href="../downloads/SpringsValley.exe" class = "downloadBtn" download>Download Build 1.0  <i class="fas fa-angle-double-right"></i></a> 
+        <a href="../downloads/Springs Valley 1.0.exe" class = "downloadBtn" download>Download Build 1.0  <i class="fas fa-angle-double-right"></i></a> 
         </div>
       </div>
     </div>
@@ -125,10 +125,10 @@
   document.querySelector('.expandBtn').addEventListener('click', function(event) {
     if(document.querySelector(".information").style.maxHeight == 'none') {
       document.querySelector(".information").style.maxHeight = '15rem';
-      document.querySelector('.expandBtn').textContent = "Expand";
+      document.querySelector('.expandBtn').innerHTML = "expand <i class='fas fa-angle-double-down'></i>";
     } else {
       document.querySelector(".information").style.maxHeight = 'none';
-      document.querySelector('.expandBtn').textContent = "Collapse";
+      document.querySelector('.expandBtn').innerHTML = "collapse <i class='fas fa-angle-double-up'></i>";
     }
 });
 </script>
