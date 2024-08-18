@@ -139,6 +139,53 @@ body {
   }
 
 
+  /* 4 Footer */
+
+footer {
+  margin-top: 1rem;
+}
+
+.contact_info {
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 0rem 0.2rem ;
+  text-align: center;
+  padding-left: 1px;
+}
+
+.contact_info ul {
+  list-style-position: inside;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.social {
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 0.1rem 0.2rem 2rem ;
+  text-align: center;
+}
+
+.social_icons {
+  font-size: 200%;
+  display: inline-block;
+}
+
+.social_icons a {
+  color: #ffffff;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.social_icons a :hover {
+  color: #3b3b3b;
+}
+
+.social p {
+  font-size: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+
 
 /* Media Queries */
 @media screen and (min-width: 700px) {
