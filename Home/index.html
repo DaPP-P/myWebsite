@@ -21,7 +21,7 @@
   <body>
     
   <!-- navigation -->
-  <section class="navWrap">
+  <section class="navWrap" id = "navWrap">
     <input type="checkbox" id="navToggle" class="navToggle">
     <label for="navToggle" class="navToggleLabel"><span></span></label>
     <nav>
@@ -42,8 +42,7 @@
     <h1>Prvanov</h1>
     <article>
     <p>Welcome to my website. Here are some of the projects I've been working on :)</p>
-    <a href="#object_one"><button> Look around  <i class="fas fa-angle-double-right"></i></button> </a>
-    </article>
+    <button onclick="scrollToStart()">Look around <i class="fas fa-angle-double-right"></i></button>    </article>
   </section>
 
 <!-- ObjectZero -->
@@ -75,7 +74,7 @@
   </article>
 </section>
 <!-- Social Links -->
-<section class = "social">
+<section class = "social", id = "social">
   <article> 
     <h4> Feel free to connect with me!</h4>
     <div class = "social_icons">
@@ -93,3 +92,18 @@
 
 </body>
 </html>
+
+<script>
+ 
+function scrollToStart() {
+  var element = document.getElementById('social');
+    console.log('Target Elementis found:', element); // Check if element is found
+    if (!element) {
+      console.error('Element not found');
+      return;
+    }
+
+    window.scrollTo(element);
+}
+
+</script>
