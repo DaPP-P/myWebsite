@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Load my style sheet-->
     <link rel="stylesheet" href="../styles/default-style.css?v=1.0" type="text/css" media="all" />
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="home-style.css" type="text/css" media="all" />
   
   </head>
   
@@ -41,7 +41,7 @@
     <img src="../Images/dodge_circle.png" alt="Dodge my goat">
     <h1>Prvanov</h1>
     <article>
-    <p>Welcome to my website. Here are some of the projects I've been working on :)</p>
+    <p>Welcome to my website.</p>
     <button onclick="scrollToStart()">Look around <i class="fas fa-angle-double-right"></i></button>    </article>
   </section>
 
@@ -95,15 +95,17 @@
 
 <script>
  
-function scrollToStart() {
-  var element = document.getElementById('social');
-    console.log('Target Elementis found:', element); // Check if element is found
-    if (!element) {
-      console.error('Element not found');
-      return;
-    }
+ function scrollToStart() {
+  console.log("btn clicked");
 
-    window.scrollTo(element);
+  const element = document.querySelector('.object_one'); // Target element
+  // Scroll to the element
+  element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
 }
+
+
 
 </script>
