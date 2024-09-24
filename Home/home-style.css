@@ -1,4 +1,8 @@
 
+  .html .body{
+    background-color: #050505;
+  }
+  
   /*  2 Hero */
   .hero {
     background-color: #050505;
@@ -22,6 +26,9 @@
   
   .hero h1 {
     margin: 0;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-clip: text;
+    color: transparent;
     padding: 0px 0px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -51,36 +58,6 @@
 
 /* 3 Objects */
 
-.object_zero {
-  background-color:  rgb(89, 89, 89);
-  background-size: cover;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 10px 2fr 10px;
-  grid-template-rows: .5fr 1fr 1fr 20px;
-  grid-gap: 2px;
-  align-self: center; 
-}
-
-.object_zero h1 {
-  margin: auto;
-  padding-top: 3.5rem;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  text-decoration: underline;
-}
-
-.object_zero .first {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.object_zero .second {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-}
 
 .object_one {
   background-color: #050505;
@@ -125,12 +102,13 @@
         background-size: cover;
         text-align: left;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: .5fr .1fr .5fr .5fr .25fr;
+        grid-template-rows: .5fr .1fr .5fr;
         align-items: center;
       }
 
       .hero h1 {
-        margin-bottom: 0rem;
+        font-size: 7.5rem;
+        margin-bottom: 1rem;
         grid-column: 3/5;
         grid-row: 2 /3;
         text-align:center;
@@ -143,7 +121,7 @@
       }
     
       .hero article {
-       margin-top: 0.1rem;
+       margin-top: 0rem;
        max-width: 1000px;
        grid-column: 3 / 5;
        grid-row: 3/3;
@@ -151,93 +129,160 @@
       }
 
 
-
     /* Object Media Queries */
     
-    .object_zero { 
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: #050505;
-      min-height: 200px;
-      display: grid;
-      grid-template-columns: .25fr 1fr 1fr 1fr .25fr;;
-      grid-template-rows: repeat(2, 1fr); ;
-      align-items: center;
-    }
-    
-    .object_zero h1 {
-      font-size: 2.5rem;
-      margin-top: 0.1rem;
-      grid-row: 1 / 2;
-      grid-column: 2 / 3;
-    }
-
-    .object_zero .first {
-      border-left: solid 1px #fff;
-      padding-left: 1rem;
-      text-align: left;
-      grid-row: 1 / 2;
-      grid-column: 3 / 5;
-    }
-
-    .object_zero .second {
-      padding-left: 1rem;
-      text-align: left;
-      grid-row: 2 / 3;
-      grid-column: 2 / 5;
-      margin-left: 5%;
-    }
-
+    /* Object One */
+   
     .object_one {
-      padding-top: 50px;
+      padding-top: 2rem;
       padding-bottom: 100px;
       background-color: #050505;
       min-height: 200px;
       display: grid;
-      grid-template-columns: .25fr 1fr 1fr 1fr .25fr;;
-      grid-template-rows: repeat(3, 1fr); ;
+      grid-template-columns: 1fr .5fr .5fr 1fr 1fr 1fr;
+      grid-template-rows:  .75fr;
       align-items: center;
     }
     
     .object_one h1 {
-      font-size: 2.5rem;
-      margin-top: 0.1rem;
+      font-size: 3.5rem;
       grid-row: 1 / 2;
-      grid-column: 2 / 3;
+      grid-column: 3 / 4;
       width: 100%;
       white-space: wrap;
       text-decoration: underline;
+
+      margin-top: 1.75rem;
+      text-align:center;
+      margin-right: 100px;
+      align-self: center;   /* Vertically center the h1 */
     }
 
     .object_one p {
+      font-size: 1.5rem;
       border-left: solid 1px #fff;
       padding-left: 1rem;
       text-align: left;
       grid-row: 1 / 2;
-      grid-column: 3 / 5;
+      grid-column: 4 / 6;
     }
 
-    .object_one iframe {
-      width: 100%;
-      height: 100%;
-      grid-row: 2 / 4;
-      grid-column: 2 / 5;
+    /* Objcet Two */
+
+    .object_two {
+      padding-bottom: 100px;
+      background-color: #050505;
+      min-height: 200px;
+      display: grid;
+      grid-template-columns: 1fr .5fr .5fr 1fr 1fr 1fr;
+      grid-template-rows:  .75fr .25fr .25fr;
+      align-items: center;
     }
+    
+    .object_two h1 {
+      font-size: 2.5rem;
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
+      width: 100%;
+      white-space: wrap;
+      text-decoration: underline;
+
+      margin-top: 1.75rem;
+      text-align:center;
+      margin-right: 100px;
+      align-self: center;   /* Vertically center the h1 */
+    }
+
+    .object_two p {
+      font-size: 1.5rem;
+      padding-left: 1rem;
+      text-align: left;
+      grid-row: 1 / 2;
+      grid-column: 3 / 6;
+    }
+
+    #object_two-bullet1 {
+      font-size: 1.25rem;
+      padding-left: 1.5rem;
+      grid-row: 2 / 3;
+      grid-column: 3 / 6;
+    };
+
+    #object_two-bullet2 {
+      margin-top: .5rem;
+      font-size: 1.25rem;
+      padding-left: 1.5rem;
+      grid-row: 3 / 4;
+      grid-column: 3 / 6;
+    };
+
+    /* Object Three */
+
+    .object_three {
+      padding-bottom: 100px;
+      background-color: #050505;
+      min-height: 200px;
+      display: grid;
+      grid-template-columns: 1fr .5fr .5fr .5fr .5fr 1fr;
+      grid-template-rows:  .75fr .25fr;
+      align-items: center;
+    }
+    
+    .object_three h1 {
+      font-size: 3.5rem;
+      grid-row: 1 / 2;
+      grid-column: 2/ 4;
+      width: 100%;
+      white-space: wrap;
+      text-decoration: underline;
+
+      margin-top: 1.75rem;
+      text-align:center;
+      margin-right: 100px;
+      align-self: center;   /* Vertically center the h1 */
+    }
+
+    #object3_img1 {
+      border: rgb(109, 15, 15);
+      border-width: 1cap;
+      border-style: inset;
+      width: 5rem;
+      height: auto;
+      size: 10.5rem;
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      align-self: center;
+      justify-self: right;
+    }
+
+    #object3_img2 {
+      border: rgb(109, 15, 15);
+      border-width: 1cap;
+      border-style: inset;
+      width: 5rem;
+      height: auto;
+      size: 10.5rem;
+      grid-row: 2 / 3;
+      grid-column: 3/ 4;
+      align-self: center;
+      justify-self: right;
+    }
+
+    #object3_img3 {
+      border: rgb(109, 15, 15);
+      border-width: 1cap;
+      border-style: inset;
+      width: 5rem;
+      height: auto;
+      size: 10.5rem;
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+      align-self: center;
+      justify-self: right;
+    }
+
+  
   }
 
-    @media screen and (min-width: 1300px) {
-      
-      .object_one h1 {
-        white-space: nowrap;
-      }
-
-      .object_one {
-        grid-template-rows: 1fr .25fr repeat(6, 1fr);
-      }
-
-      .object_one iframe {
-        grid-row: 3 / 9;
-      }
-    }
 
 
