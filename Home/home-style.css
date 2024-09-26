@@ -58,21 +58,23 @@
 
 /* 3 Objects */
 
+/* Onject One */
 
 .object_one {
   background-color: #050505;
   background-size: cover;
     color: #fff;
-    font-size: 20px;
     text-align: center;
     display: grid;
-    grid-template-columns: 10px 2fr 10px;
-    grid-template-rows: .5fr 1fr 1fr 20px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: .25% .75%;
     grid-gap: 2px;
     align-self: center;
+    margin-bottom: 1rem;
   }
 
   .object_one h1 {
+    font-size: 2rem;
     margin: auto;
     padding-top: 1rem;
     grid-column: 2 / 3;
@@ -81,6 +83,7 @@
   }
   
   .object_one p {
+    font-size: 1rem;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
@@ -90,7 +93,51 @@
     grid-row: 3 / 4;
     padding: 5px 10px;
     margin: .25rem auto 0;
-    }
+  }
+
+  /* Object Two */
+
+  .object_two {
+    background-color: #050505;
+    background-size: cover;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    display: grid;
+    grid-gap: 2px;
+    align-self: center;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 40% 20% 20%;
+  }
+  
+  .object_two p {
+    margin: auto;
+    padding-top: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+   }
+
+   #object_two-bullet1 {
+    margin: auto;
+    font-size: 0.75rem;
+    padding-top: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+   }
+   #object_two-bullet2 {
+    margin: auto;
+    font-size: 0.75rem;
+    padding-top: 0.5rem;
+    grid-column: 2/ 3;
+    grid-row: 3 / 4;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    
+   }  
+    
+
 
 
 /* Media Queries */
@@ -126,6 +173,10 @@
        grid-column: 3 / 5;
        grid-row: 3/3;
        text-align: center;
+      }
+
+      .hero p {
+        margin-top: 0;
       }
 
 
