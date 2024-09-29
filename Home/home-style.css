@@ -210,6 +210,7 @@
       margin-top: 20%;
       grid-row: 2 / 3;
       grid-column: 3 / 4;
+      width: 50px;
     }
 
     #new_lands_title {
@@ -218,6 +219,7 @@
       margin-top: 20%;
       grid-row: 3 / 4;
       grid-column: 3 / 4;
+      width: 50px;
     }
 
     #basketball_stats_title {
@@ -226,6 +228,7 @@
       margin-top: 20%;
       grid-row: 4 / 5;
       grid-column: 3 / 4;
+      width: 50px;
     }
 
    
@@ -240,7 +243,7 @@
         background-size: cover;
         text-align: left;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: .5fr .1fr .5fr;
+        grid-template-rows: .5fr .1fr .2fr .5fr;
         align-items: center;
       }
 
@@ -266,6 +269,16 @@
       }
 
       .hero p {
+        text-align: center;
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+        margin-top: 0;
+      }
+
+      .hero button {
+        text-align: center;
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
         margin-top: 0;
       }
 
