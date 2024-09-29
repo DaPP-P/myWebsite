@@ -42,9 +42,8 @@
   <section class = "hero hidden">
     <!--<img src="../Images/dodge_circle.png" alt="Dodge my goat" class="no-animation"> -->
     <h1>Prvanov</h1>
-    <article>
     <p>My website.</p>
-    <button onclick="scrollToStart()">Look around <i class="fas fa-angle-double-right"></i></button>    </article>
+    <button onclick="scrollToStart()">Look around <i class="fas fa-angle-double-right"></i></button> 
   </section>
 
 
@@ -66,6 +65,10 @@
 <!-- ObjectThree-->
 <section class= "object_three hidden" id="object_three">
   <h1> The Goods</h1>
+  <h2 id ="springs_valley_title"> Springs Valley</h2>
+  <h2 id = "new_lands_title"> New Lands</h2>
+  <h3  id = "basketball_stats_title"> Basketball Statistics</h3>
+  
   <img src="../Images/prvanov-home-sword.png" id = "object3_img1" alt="Pixel sword">
   <img src="../Images/prvanov-home-snake.png" id = "object3_img2" alt="Pixel snakes">
   <img src="../Images/prvanov-home-basketball.png" id = "object3_img3" alt="Pixel basketball">
@@ -115,7 +118,6 @@
   // Scroll to the element
   element.scrollIntoView({
     behavior: 'smooth',
-    block: 'start'
   });
 }
 
